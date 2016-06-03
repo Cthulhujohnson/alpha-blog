@@ -1,0 +1,1 @@
+#use this command to start the server in cloud9: rails s -p $PORT -b $IP
