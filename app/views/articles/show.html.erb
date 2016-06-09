@@ -1,4 +1,14 @@
-<p><%= @article.title %></p>
-<p><%= @article.description %></p>
-<%= link_to 'Edit', edit_article_path(@article) %>
-<%= link_to 'Back', articles_path %>
+
+<div class="col-xs-8 col-xs-offset-2">
+  <h2>Title: <%= @article.title %></h2>
+</div>
+<div class="well col-xs-8 col-xs-offset-2">
+  <h4 class="description">Description:</h4>
+  <hr>
+  <%= simple_format(@article.description) %>
+  <div class="article-actions">
+    <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-xs btn-primary" %> |
+    <%= link_to 'delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %> |
+    <%= link_to 'Article Index', articles_path, class: "btn btn-xs btn-success" %>
+  </div>
+</div>
