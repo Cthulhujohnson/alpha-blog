@@ -3,7 +3,9 @@ ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use SCSS for stylesheets
+# use bcrypt for password authentication and encryption
+gem 'bcrypt', '~> 3.1.7'
+# Use SCSS for stylesheets, and implement Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
