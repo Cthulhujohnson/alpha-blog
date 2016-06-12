@@ -1,5 +1,7 @@
 #use this command to start the server in cloud9: rails s -p $PORT -b $IP
 
+#migration command: rails generte migration migrationname
+
 #when building a migration and adding a column to a database table use the following format:
 #add_column :databse_name, :column_name, :data_type
 #it is important to remember the database name will be the plural form of the database name|
